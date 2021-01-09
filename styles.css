@@ -1,6 +1,5 @@
 html {
 
-    overflow-y: scroll;
 }
 
 body {
@@ -13,19 +12,21 @@ body {
     /*overflow-y: scroll;
     height: 100vh;*/
 
-    transition: background-color 0.5s ease;
+    transition: background-color 1s ease;
 }
 
 
 .scrl-sect {
 
-    height:100vh;
+    min-height:100vh;
 
     padding-left:25%;
     padding-top:5%;
+    padding-right:20%;
 
-    scroll-snap-align: start;
-    height:100vh;
+    overflow-x: hidden;
+
+    /*border: 1px solid red;*/
 }
 
 .color-grey {background-color: #50514f;}
@@ -48,8 +49,6 @@ body {
 #summary:hover{color:#ffe066;}
 
 #contact-links{
-
-
     /*border: 1px solid red;*/
     width: min-content;
     font-family: Trebuchet MS;
@@ -63,7 +62,10 @@ body {
     all: unset;}
 
 .contact:hover{color:white;}
-.title.sect {font-size: 3em;font-family: 'Trebuchet MS';}
+
+.title{font-family: 'Trebuchet MS';color:black;}
+.title.sect {font-size: 3.5em;}
+.title.proj {font-size:2.5em; padding-top: 10%;}
 
 #edu-info {font-size:1.7em; color: #333333;}
 
@@ -71,8 +73,19 @@ body {
 .bold{font-weight:bold;}
 
 #more-edu-butt{
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
+.project-title{font-family:inherit;}
 
-#block-chain-trinket{margin-left:-15%;}
+#block-chain-trinket{
+    margin-left:-15%;
+    margin-right: 50%;
+    width: 130%;
+    height: 700px;
+}
+
+.proj-desc{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}

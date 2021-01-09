@@ -25,18 +25,35 @@
                 <p id='more-edu-cont'>some extra stuff, maybe relevant courses</p>
             </div>
         </div>
-        <div class='title scrl-sect' data-color='turquoise'>
+        <div class='scrl-sect' data-color='turquoise'>
             <h1 class='title sect'>Code Projects</h1>
             
-            <h2 class='project-title'>BlockChain Cryptocurrency</h2>
-            <iframe id='block-chain-trinket' src="https://trinket.io/embed/python3/186e261a49" width="100%" height="700" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <h2 class='title proj'>Python3 BlockChain Cryptocurrency</h2>
+            <div class='proj-desc'>
+                <p>Object-Oriented implementation of a blockchain, containing transactions of a cryptocurrency.<br>
+                Quick-start: <code>buy</code> to create a block, <code>mine</code> to calculate a hash and add to chain, <code>show </code>to see the contents of the newly added block. </p>
+                <ul>
+                    <li>Fields of Block object dumped into json file with sorted order</li>
+                    <li>Hashes of blocks computed with SHA256 with json file as input</li>
+                    <li>Proof of work ensures hash starts with difficulty <code>(Block_chain attribute = 4)</code> amount of leading zeroes</li>
+                    <li>While loop computes new hashes by incrementing <code>Block nonce</code> attribute until valid hash is attained</li>
+                </ul>
+                <p>Todo: use as means to research P2P in Python3, add merkel trees. <br>
+                <a href='https://github.com/Logan-PD/BlockChain'>Source Code Repository</a>
+            </p>
+            </div>
+            <iframe id='block-chain-trinket' src="https://trinket.io/embed/python3/186e261a49" frameborder="0" allowfullscreen></iframe>
+
+            <h2 class='title proj'>This Site</h2>
+            <div class='proj-desc'>a description for another project</div>
+
 
         </div>
-        <div class='title scrl-sect'>
-            <h1 class='title sect'>one</h1>
+        <div class='scrl-sect'>
+            <h1 class='title sect'>Work Experience</h1>
         </div>        
-        <div class='title scrl-sect'>
-            <h1 class='title sect'>two</h1>
+        <div class='scrl-sect'>
+            <h1 class='title sect'>Interests</h1>
         </div>
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src='scripts.js'></script>
