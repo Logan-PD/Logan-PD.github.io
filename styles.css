@@ -1,30 +1,37 @@
 html {
 
-    overflow: hidden;
-    
+    overflow-y: scroll;
 }
 
 body {
     
     margin: 0;
-    background: linear-gradient(#50514F 50%,#F25F5C);
-
+    /*background: linear-gradient(#50514F 50%,#F25F5C);*/
 
     /*scroll-snap-points-y: repeat(50vh);
     scroll-snap-type: y proximity; remove a lot more if not keeping snap*/
-    overflow-y: scroll;
-    height: 100vh;
+    /*overflow-y: scroll;
+    height: 100vh;*/
+
+    transition: background-color 0.5s ease;
 }
+
 
 .scrl-sect {
 
-    padding-left:20%;
+    height:100vh;
+
+    padding-left:25%;
     padding-top:5%;
 
     scroll-snap-align: start;
-    height:50vh;
+    height:100vh;
 }
 
+.color-grey {background-color: #50514f;}
+.color-pink {background-color: #f25f5c;}
+.color-yellow {background-color: #ffe066;}
+.color-turquoise {background-color: #70c1b3;}
 
 #name {
     color: black;
@@ -57,3 +64,12 @@ body {
 
 .contact:hover{color:white;}
 .title.sect {font-size: 3em;font-family: 'Trebuchet MS';}
+
+#edu-info {font-size:1.7em; color: #333333;}
+
+#uofc{font-family: Calibri; font-weight: bold; font-size:1.5em;}
+.bold{font-weight:bold;}
+
+#more-edu-butt{
+    font-size: 0.6em;
+}
