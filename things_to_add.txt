@@ -3,8 +3,6 @@ dijkstras routing algorithm for link state routing
 
 pthread barrier synchronization, 457 asn3
 
-React hospital screenshot
+React hospital 
 
 java zombie game
-
-haskell parser - expand
