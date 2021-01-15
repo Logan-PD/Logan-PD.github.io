@@ -81,6 +81,7 @@ a {color: #085575;}
     color: transparent;
     background: url(/matrix.gif);
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 
