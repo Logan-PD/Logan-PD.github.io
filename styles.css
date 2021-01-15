@@ -32,7 +32,7 @@ body {
 .color-yellow {background-color: #ffe066;}
 .color-turquoise {background-color: #70c1b3;}
 
-#name {
+.name.title.sect {
     color: black;
     font-size: 6em;
 }
@@ -40,7 +40,6 @@ body {
 #summary {
     color: #ffe066;
     font-size: 2em;
-    width: max-content;
 }
 
 #contact-links{
@@ -69,6 +68,17 @@ a {color: #085575;}
 
 .project-title{font-family:inherit;}
 
+
+#code {
+    
+    color: transparent;
+    background: url(/matrix.gif);
+    background-clip: text;
+}
+
+
+
+
 #block-chain-trinket{
     margin-left:-15%;
     width: 130%;
@@ -80,3 +90,21 @@ a {color: #085575;}
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
+#this-site{
+
+    font-size: 0.5em;
+    width: 80%;
+
+    border-radius: 1%;
+    border: 2px ridge #f25f5c;
+    background-color: gray;
+
+}
+
+#this-site-text{
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+

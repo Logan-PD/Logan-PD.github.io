@@ -1,3 +1,10 @@
+function topOfPage () {
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
 $(document).ready(function() {
   $('#more-edu-cont').hide();
   $('#more-edu-butt').click(function(){
@@ -46,23 +53,30 @@ $(window).scroll(function() {
 */
 function changeCharColour () {
 
-  var text, name, changed;
+  var text, names, changed;
   var colours = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','black'];
 
-  name = document.getElementById("name");
-  text = name.innerHTML;
+  names = document.getElementsByClassName("name");
+  
+  /*apply function to all elements in class 'name'*/
+  for (let j=0; j<names.length; j++) {
 
-  /*wrap every char in a string into a class*/
-  changed = "";
-  for (let i=0; i<text.length; i++){
-    changed += "<span class=charInName>" + text.charAt(i) + "</span>";
+    text = names[j].innerHTML;
+
+    /*wrap every char in a string into a class*/
+    changed = "";
+    for (let i=0; i<text.length; i++){
+      changed += "<span class=charInName>" + text.charAt(i) + "</span>";
+    }
+    names[j].innerHTML=changed;
+
   }
-  name.innerHTML=changed;
+  
 
 
   /*set mouse hover properties to change to a random colour*/
   var chars = document.getElementsByClassName('charInName');
-  var rand_col, curr_col;
+  var rand_col;
 
   for (let i=0; i<chars.length; i++){
     chars[i].onmouseover = function () {
