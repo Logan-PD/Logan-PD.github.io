@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 /*
 https://codepen.io/daveredfern/pen/zBGBJV
-*/
+
 $(window).scroll(function() {
   
   var $window = $(window),
@@ -44,7 +44,7 @@ $(window).scroll(function() {
     }
   });    
   
-}).scroll();
+}).scroll();*/
 
 /*
   https://stackoverflow.com/questions/31468794/how-to-show-random-color-on-hover-in-css
@@ -54,7 +54,7 @@ $(window).scroll(function() {
 function changeCharColour () {
 
   var text, names, changed;
-  var colours = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','black'];
+  var colours = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','#454545'];
 
   names = document.getElementsByClassName("name");
   

@@ -1,4 +1,6 @@
 body {
+    background-color: black;
+    color:rgb(173, 173, 173);
     
     margin: 0;
     /*background: linear-gradient(#50514F 50%,#F25F5C);*/
@@ -8,7 +10,7 @@ body {
     /*overflow-y: scroll;
     height: 100vh;*/
 
-    transition: background-color 1s ease;
+    transition: background-color 3s ease;
 
     font-family: Calibri;
 }
@@ -16,7 +18,7 @@ body {
 
 .scrl-sect {
 
-    min-height:100vh;
+    min-height:30vh;
 
     padding-left:25%;
     padding-top:5%;
@@ -27,26 +29,30 @@ body {
     /*border: 1px solid red;*/
 }
 
-.color-grey {background-color: #50514f;}
+.color-black {background-color: black;}
 .color-pink {background-color: #f25f5c;}
 .color-yellow {background-color: #ffe066;}
 .color-turquoise {background-color: #70c1b3;}
 
+.l-blue {color: #3A86FF;}
+.green {color:#8ac926;}
+.pink {color: #FF006E;}
+.orange {color: #FB5607;}
+
 .name.title.sect {
-    color: black;
-    font-size: 6em;
+    font-size: 4em;
 }
 
 #summary {
     color: #ffe066;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #contact-links{
     /*border: 1px solid red;*/
+    font-size: 1.3em;
     width: min-content;
-    color: rgb(175, 175, 175);
-    font-size: 1.5em;
+    color: rgb(197, 197, 197);
     text-decoration: none;
 }
 
@@ -55,13 +61,14 @@ a {color: #085575;}
 .contact {margin-top:50%; all: unset;}
 .contact:hover{color:white;}
 
-.title.sect {font-size: 3.5em;}
-.title.proj {font-size:2.5em; padding-top: 10%;}
+.title.sect {font-size: 2.5em;}
+.title.proj {font-size:2.3em; padding-top: 5%;}
 
-#edu-info {font-size:1.7em; color: #333333;}
+#edu-info {font-size:1.5em;}
+
 
 #uofc{font-family: Calibri; font-weight: bold; font-size:1.5em;}
-.bold{font-weight:bold;}
+.bold{font-weight:bold; color:white;}
 
 #more-edu-butt{font-size: 0.7em;}
 #more-edu-butt:hover{color:red;}
@@ -70,7 +77,7 @@ a {color: #085575;}
 
 
 #code {
-    
+    font-size:3em;
     color: transparent;
     background: url(/matrix.gif);
     background-clip: text;
@@ -87,18 +94,18 @@ a {color: #085575;}
 
 .proj-desc{
     
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.5em;
 }
 
 #this-site{
 
-    font-size: 0.5em;
+    font-size: 0.7em;
     width: 80%;
 
     border-radius: 1%;
     border: 2px ridge #f25f5c;
-    background-color: gray;
+    background-color: black;
 
 }
 
