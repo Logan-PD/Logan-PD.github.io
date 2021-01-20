@@ -54,7 +54,7 @@ $(window).scroll(function() {
 function changeCharColour () {
 
   var text, names, changed;
-  var colours = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','#454545'];
+  var colours = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','#aaaaaa'];
 
   names = document.getElementsByClassName("name");
   
