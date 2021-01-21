@@ -6,9 +6,11 @@ function topOfPage () {
 
 
 $(document).ready(function() {
-  $('#more-edu-cont').hide();
+  $('.more-edu-cont').hide();
   $('#more-edu-butt').click(function(){
-    $('#more-edu-cont').toggle('slow');
+    $('.more-edu-cont').toggle('slow');
+    var txt = $("#more-edu-butt").text() == 'less' ? 'more' : 'less';
+    $("#more-edu-butt").text(txt);
   });
 });
 

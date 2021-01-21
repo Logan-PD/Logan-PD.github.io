@@ -6,3 +6,56 @@ pthread barrier synchronization, 457 asn3
 React hospital 
 
 java zombie game
+
+
+relevant courses
+<h2>Favourite and Relevant courses</h3>
+                        <li>Computer Science</li>
+                        <ul>
+                            <li><span class='green'>Networks</span>
+                                <ul>
+                                    <li>HTTP Proxy Server</li>
+                                    <li>TCP & UDP mircroservice toy</li>
+                                    <li>Distance-Vector Routing Simulation</li>
+                                    <li>Google Cloud remote server traffic measurement</li>
+                                    <li>QUIC Research Poster</li>
+                                </ul>
+                            </li>
+                            <li><span class='pink'>Operating Systems</span>
+                                <ul>
+                                    <li>C/C++ Pthread - Multithreaded Programming</li>
+                                    <li>System Call Optimizations</li>
+                                    <li>Various low level, algorithmic optimizations</li>
+                                </ul>
+                            </li>
+                            <li><span class='l-blue'>Programming Paradigms</span>
+                                <ul>
+                                    <li>Functional - Haskell: Parser, foldr, recursing, induction</li>
+                                    <li>Logical - Prolog</li>
+                                </ul>
+                            </li>
+                            <li><span class='orange'>Data Structures and Algorithms</span>
+                                <ul>
+                                    <li>Implementation of Binary Tree</li>
+                                    <li>Merge - Insertion Hybrid Sort</li>
+                                    <li>Proof and Big O of algorithms correctness</li>
+                                </ul>
+                            </li>
+                            <li><span class='purple'>Math</span>
+                                <ul>
+                                    <li>Discrete Math</li>
+                                    <li>Calculus</li>
+                                    <li>Linear Algebra</li>
+                                    <li>Statistics</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <li>Philosophy</li>
+                        <ul>
+                            <li>Epistemology</li>
+                            <li>Meta-Logic: Godels completeness Theorem</li>
+                            <li>Morality, Virtue and Society</li>
+                            <li>IT Ethics</li>
+                            <li>20th Century Continental Philosophy</li>
+                        </ul>
