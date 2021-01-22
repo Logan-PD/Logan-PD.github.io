@@ -59,3 +59,9 @@ relevant courses
                             <li>IT Ethics</li>
                             <li>20th Century Continental Philosophy</li>
                         </ul>
+
+
+
+a class='contact' href='httpsgithub.comLogan-PD'img class='logo' src='photosGitHub_Logo.png'Githuba
+                    a class='contact' href='httpswww.linkedin.cominlogan-perry-din' target='_blank'img class='logo' src='photoslinkedin-32.png'linkedina
+                    a class='contact' href='mailtologan.perrydin@gmail.com'img class='logo' src='photosmail-32.png'logan.perrydin@gmail.coma
