@@ -65,3 +65,17 @@ relevant courses
 a class='contact' href='httpsgithub.comLogan-PD'img class='logo' src='photosGitHub_Logo.png'Githuba
                     a class='contact' href='httpswww.linkedin.cominlogan-perry-din' target='_blank'img class='logo' src='photoslinkedin-32.png'linkedina
                     a class='contact' href='mailtologan.perrydin@gmail.com'img class='logo' src='photosmail-32.png'logan.perrydin@gmail.coma
+
+
+
+
+<p>Object-Oriented implementation of a blockchain, containing transactions of a cryptocurrency.<br>
+                    Quick-start: <code>buy</code> to create a block, <code>mine</code> to calculate a hash and add to chain, <code>show </code>to see the contents of the newly added block. </p>
+                    <ul>
+                        <li>Fields of Block object dumped into json file with sorted order</li>
+                        <li>Hashes of blocks computed with SHA256 with json file as input</li>
+                        <li>Proof of work ensures hash starts with difficulty <code>(Block_chain attribute = 4)</code> amount of leading zeroes</li>
+                        <li>While loop computes new hashes by incrementing <code>Block nonce</code> attribute until valid hash is attained</li>
+                    </ul>
+                    <p>Todo: use as means to research P2P in Python3, add merkel trees. <br>
+                    <a href='https://github.com/Logan-PD/BlockChain'>Source Code Repository</a>

@@ -23,7 +23,7 @@ https://codepen.io/daveredfern/pen/zBGBJV
 $(window).scroll(function() {
   
   var $window = $(window),
-      $body = $('body'),
+      $body = $('#black'),
       $panel = $('.scrl-sect');
   
   // Change 40% earlier than scroll position so colour is there when you arrive.
