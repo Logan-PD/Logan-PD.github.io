@@ -17,7 +17,7 @@ body {
 
     transition: background-color 3s ease;
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Trebuchet MS, sans-serif;
 }
 
 #black {
@@ -79,10 +79,12 @@ body {
 
 
 .name.title.sect {
+    padding-top: 3%;
     font-size: 3em;
 }
 
 #summary {
+    padding-top: 2%;
     color: #ffe066;
     font-size: 1.5em;
 }
@@ -104,7 +106,7 @@ a {color: #085575;}
 .title{font-weight: 500;}
 .title.sect {font-size: 2.5em;}
 .title.proj {
-    font-size:3em; 
+    font-size:2.5em; 
     padding-top: 5%;
 }
 
