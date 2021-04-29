@@ -122,16 +122,18 @@ h1 {
 
 #DBcont{
     display:flex;
+    width:90vw;
+    margin-left: -15%;
 }
 #DBgif{
-    margin-left: -8%;
-    object-fit: cover;
-    width: 800px;
+    object-fit: contain;
+    max-width: 50%;
+    height: auto;
 }
 #query{
-    font-size:0.8em;
-    width: 100%;
-    height: min-content;
+    font-size:0.7em;
+    max-width: min-content;
+    height: auto;
     line-height: 1.3;
 }
 
