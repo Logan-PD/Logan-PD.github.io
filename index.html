@@ -7,6 +7,9 @@
         <link rel='stylesheet' type='text/css' href='styles.css'>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+
     </head>
     <body>
         <div id='intro' class='scrl-sect'>
@@ -42,7 +45,7 @@
                 
             </ul>
         </div>
-        <div class='scrl-sect' data-color='pink'>
+        <div class='scrl-sect'>
             <h1 id='code' class='title sect'>Coding Projects</h1>
             
 
@@ -76,18 +79,66 @@
             </div>
             <iframe id='block-chain-trinket' src="https://trinket.io/embed/python3/186e261a49" frameborder="1" allowfullscreen></iframe>
 
-            <h2 class='title proj'>(UNDER CONSTRUCTION)</h2>
+            <h2 class='title proj'>Databases Course Term Project</h2>
+            <div class='proj-desc'>
+                <p>Full stack development of a 3-tier architecure web application.<br>
+                    Tool for admitting and diagnosing patients remotely. I was in charge of the clerk functionality, shown below.
+                </p>
+                Technologies</p>
+                <ul>
+                    <li><i>Front-End:</i> 
+                        <span class='green'>Vue.js</span>, <span class='g-blue'>TailwindCSS</span></li>
+                    <li><i>Application & API:</i> 
+                        <span class='yellow'>Python Flask-Restful</span></li>
+                    <li><i>Database:</i>
+                        <span class='l-blue'>SQLite3</span></li>
+                </ul>
+                <div id='DBcont'>
+                    <img id='DBgif' src='/photos/databaseProj.gif'>
+                    <pre id='query'><code class='python'>
+    """Sample Query using list comprehensions to build json with nested lists"""
 
-            <h2 class='title proj'>ReactJS Management Site</h2>
-            <h2 class='title proj'>Haskell Parser</h2>
-        </div>
+    # Get Patients and keys of all their forms. Null if no report of that kind exists
+    cursor.execute(
+        "SELECT p.P_SSN, n.Fname, n.Lname, n.Is_approved, m.TPAL_total \
+        FROM Patient as p \
+        LEFT JOIN New_Applicant_Form as n ON p.P_SSN=n.P_SSN \
+        LEFT JOIN Medical_History as m ON p.P_SSN=m.P_SSN \
+        ORDER BY n.Is_approved ASC ;")
 
-        <div class='scrl-sect' data-color='yellow'>
-            <h1 class='title sect'>Work Experience</h1>
-        </div>        
+    forms = cursor.fetchall()
+    forms = [dict(f) for f in forms]
+
+    # Get all covid screens of each patient
+    for form in forms:
+    cursor.execute(
+        "SELECT Date FROM Covid_screen WHERE P_SSN = ?;", (form["P_SSN"],))
+    screens = cursor.fetchall()
+
+    form["dates"] = [f["Date"] for f in screens]
+
+    # Get all reports of each patient
+    for form in forms:
+    cursor.execute(
+        "SELECT Report_ID FROM Report WHERE P_SSN = ?;", (form["P_SSN"],))
+    reports = cursor.fetchall()
+
+    form["reports"] = [f["Report_ID"] for f in reports]
+
+                    </code></pre>
+                </div>
+            </div>
+
+        </div> <!-- end of coding projects-->
+
         <div class='scrl-sect'>
-            <h1 class='title sect'>Interests</h1>
+            <h1 class='title sect'>(UNDER CONSTRUCTION)</h1>
         </div>
+        
+        <!-- Highlight js: adds syntax highlighting to <pre><code> ... -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
+        <script>hljs.initHighlightingOnLoad();</script>
         
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src='scripts.js'></script>
