@@ -16,7 +16,7 @@
             <div>
                 <div id="name_photo">
                     <img id="headshot" class='name_photo' src="/photos/headshot.jpg">
-                    <p id='big-name' class='name name_photo'>Logan Irfan Perry-Din</p>
+                    <p id='big-name' class='colour name_photo'>Logan Irfan Perry-Din</p>
                 </div>
                 <p id='summary'>I am a computer science major and philoshopy minor in my final year at the University of Calgary. This site will highlight some of my projects.</p>
             </div>
@@ -27,23 +27,29 @@
             </div>
         
         </div>
-        <div class='scrl-sect'>
-            <h1 class='title sect'>Projects</h1>
-            <h2 class='title proj'>Databases Course Term Project</h2>
-            <div class='proj-desc'>
-                <p>Full stack development of a 3-tier architecure web application.<br>
-                    Tool for admitting and diagnosing patients remotely. I was in charge of the clerk functionality, shown below.
-                </p>
-                Technologies</p>
-                <ul>
-                    <li><i>Front-End:</i> 
-                        <span class='green'>Vue.js</span>, <span class='g-blue'>TailwindCSS</span></li>
-                    <li><i>Application & API:</i> 
-                        <span class='yellow'>Python Flask-Restful</span></li>
-                    <li><i>Database:</i>
-                        <span class='l-blue'>SQLite3</span></li>
-                </ul>
-                <div id='DBcont'>
+        
+        
+        <div class="scrl-sect">
+            <div id="accordion">
+            <h2 class='title proj colour'>Clicker Game ↓</h2>
+                <div class="proj-desc">
+                    this is our clicker game bla bla bla
+                </div>
+            <h2 class='title proj colour'>Databases Course Term Project ↓</h2>
+                <div class='proj-desc'>
+                    <p>Full stack development of a 3-tier architecure web application.<br>
+                        Tool for admitting and diagnosing patients remotely. I was in charge of the clerk functionality, shown below.
+                    </p>
+                    Technologies</p>
+                    <ul>
+                        <li><i>Front-End:</i> 
+                            <span class='green'>Vue.js</span>, <span class='g-blue'>TailwindCSS</span></li>
+                        <li><i>Application & API:</i> 
+                            <span class='yellow'>Python Flask-Restful</span></li>
+                        <li><i>Database:</i>
+                            <span class='l-blue'>SQLite3</span></li>
+                    </ul>
+                    
                     <img id='DBgif' src='/photos/databaseProj.gif'>
                     <pre id='query'><code class='python'>
     """Sample Query using list comprehensions to build json with nested lists"""
@@ -76,21 +82,20 @@
     form["reports"] = [f["Report_ID"] for f in reports]
 
                     </code></pre>
-                </div>
+                
             </div>
 
         </div> <!-- end of coding projects-->
+    </div>
 
-        <div class='scrl-sect'>
-            <h1 class='title sect'>(UNDER CONSTRUCTION)</h1>
-        </div>
         
         <!-- Highlight js: adds syntax highlighting to <pre><code> ... -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css">
         <script>hljs.initHighlightingOnLoad();</script>
         
-        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <script src='scripts.js'></script>
     </body>
 </html>

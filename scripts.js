@@ -1,52 +1,4 @@
-function topOfPage () {
-  document.documentElement.scrollTop = 0;
-}
 
-
-
-
-$(document).ready(function() {
-  $('.more-edu-cont').hide();
-  $('#more-edu-butt').click(function(){
-    $('.more-edu-cont').toggle('slow');
-    var txt = $("#more-edu-butt").text() == 'less' ? 'more' : 'less';
-    $("#more-edu-butt").text(txt);
-  });
-});
-
-
-
-
-/*
-https://codepen.io/daveredfern/pen/zBGBJV
-
-$(window).scroll(function() {
-  
-  var $window = $(window),
-      $body = $('#black'),
-      $panel = $('.scrl-sect');
-  
-  // Change 40% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 4);
- 
-  $panel.each(function () {
-    var $this = $(this);
-    
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-          
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
-       
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
-    }
-  });    
-  
-}).scroll();*/
 
 /*
   https://stackoverflow.com/questions/31468794/how-to-show-random-color-on-hover-in-css
@@ -55,22 +7,22 @@ $(window).scroll(function() {
 */
 function changeCharColour () {
 
-  var text, names, changed;
+  var text, colourDivs, changed;
   var colours = ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff','#aaaaaa'];
 
-  names = document.getElementsByClassName("name");
+  colourDivs = document.getElementsByClassName("colour");
   
   /*apply function to all elements in class 'name'*/
-  for (let j=0; j<names.length; j++) {
+  for (let j=0; j<colourDivs.length; j++) {
 
-    text = names[j].innerHTML;
+    text = colourDivs[j].innerHTML;
 
     /*wrap every char in a string into a class*/
     changed = "";
     for (let i=0; i<text.length; i++){
       changed += "<span class=charInName>" + text.charAt(i) + "</span>";
     }
-    names[j].innerHTML=changed;
+    colourDivs[j].innerHTML=changed;
 
   }
   
@@ -78,21 +30,28 @@ function changeCharColour () {
 
   /*set mouse hover properties to change to a random colour*/
   var chars = document.getElementsByClassName('charInName');
-  var rand_col;
 
   for (let i=0; i<chars.length; i++){
     chars[i].onmouseover = function () {
-      
-      chars[i].style.color = rand_col = colours[Math.floor(Math.random()*colours.length)];
+      chars[i].style.transition = '0s';
+      chars[i].style.color = colours[Math.floor(Math.random()*colours.length)];
     }
-
-
-    /*
+    
     chars[i].onmouseleave = function () {
       chars[i].style.color = 'white';
-    }*/
+      chars[i].style.transition = '4s';
+    }
   }
-
 }
+
+
+$( function() {
+  $( "#accordion" ).accordion({
+    collapsible: true,
+    active: false,
+    animate: 500,
+    heightStyle: "content"
+});
+} );
 
 changeCharColour();
