@@ -39,7 +39,7 @@ function changeCharColour () {
     
     chars[i].onmouseleave = function () {
       chars[i].style.color = 'white';
-      chars[i].style.transition = '4s';
+      chars[i].style.transition = '10s';
     }
   }
 }
@@ -55,3 +55,14 @@ $( function() {
 } );
 
 changeCharColour();
+
+Splide.defaults = {
+  type   : 'loop'
+}
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#image-carousel', {} ).mount();
+  new Splide( '#touch-ideas', {} ).mount();
+  new Splide( '#sense-ideas', {} ).mount();
+} );
+

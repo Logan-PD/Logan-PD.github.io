@@ -134,4 +134,14 @@ h2 {
     line-height: 1.5em;
 }
 
+.car_desc{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    font-size: 0.8em;
+}
 
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }

@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
 
+        <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+        <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
     </head>
     <body>
         <div id='intro' class='scrl-sect'>
@@ -31,10 +33,170 @@
         
         <div class="scrl-sect">
             <div id="accordion">
+            <h2 class="title proj colour">Phone Unlocks ↓</h2>
+            <div class="proj-desc">
+                <p>In this project we were challenged with coming up with a new way and creative way to unlock a mobile phone.
+                    Our team came up with a touch based solution, the guitar unlock, and a sensory based solution, the falling bird unlock.
+                </p>
+                <h3 class="colour">Multi-touch Guitar unlock</h3>
+                <p>For our innovative multi-touch unlocking system, we embarked on a journey of ideation, exploring a multitude of intriguing concepts. Among these, "Cosmic Alignment" emerged, envisioning users interacting with celestial entities akin to planets for phone access. Another concept, "Composition Unlock," entailed crafting a unique musical composition that, when performed correctly, would grant device entry. Lastly, the "Zodiac Unlock" required users to input a constellation sign corresponding to their chosen symbol for unlocking.
+                    <br><br>
+                    After extensive deliberation and the creation of initial sketches for each idea, it became apparent that the Composition Unlock not only stood as a unique approach but also promised an engaging user experience. As we transitioned from concept to implementation, our focus shifted towards refining the user interface, departing from the conventional guitar-like design to elevate the overall interaction.
+                    <br><br>
+                    Upon a sagacious suggestion from our professor, we integrated a musical element, enriching user interaction with harmonious notes upon key activation. While Heer led the charge in design and conceptualization, Kai took the helm in crafting the user interface and ensuring seamless functionality on both the front-end and back-end using HTML, CSS, and Javascript. Simultaneously, Logan integrated the musical effects into the website, guaranteeing flawless operation of the entire system.
+                </p>
+                <img src="proj2/guitar_final.png">
+                <h3 class="colour">Sensory-based bird fall</h3>
+                <p>Logan pioneered the sensory-based unlocking method, introducing innovative concepts such as the shake pattern, where users move the phone in a specific pattern to interact with the screen and unlock the device. Another inventive idea involved using vocal cues, where users could hum a tune, and the device would unlock once the correct melody was sung. As the implementation evolved, remarkable concepts emerged, including the angle unlock, which required physically manipulating the phone to reach a specific angle for unlocking. Another concept was the ladder, where a ball navigated between rungs, ultimately landing on the correct one to unlock the device. Ted endorsed this implementation, recognizing its potential.
+                    <br><br>
+                    Throughout the iterations, notable improvements were made, notably refining the locking mechanism to incorporate a tile-based approach rather than simply reaching the end, enhancing overall security. Additionally, meticulous attention was paid to the user interface. Ted authored the Unity script for the unlock screen, augmenting it with various illustrations to enhance the website's visual appeal.
+                </p>
+                <img src="proj2/bird_final.png">
+
+                <!-- carousel for multi-touch ideation-->
+                <h3 class="colour">Multi Touch Unlock Ideation</h3>
+                <section id="touch-ideas" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/color.jpeg">
+                                    <div class="car_desc">
+                                        This multi-touch unlock system necessitates users to blend their chosen unlock color, and if the resultant mixture aligns with the preset color, the phone will unlock. While this design for multi-touch demonstrates a clever concept, it garnered only two out of four votes in favor during the proposal phase. The majority of members expressed reservations about its viability as a final choice, citing potential difficulty for users to consistently reproduce the exact color and a belief that other ideas might offer greater creativity.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/cosmic.jpeg">
+                                    <div class="car_desc">
+                                        For this multi-touch unlocking system, users would need to align all the planets in the correct sequence for the phone to unlock. This concept initially appeared quite innovative, promising an engaging user experience. However, it faced a couple of significant drawbacks. Firstly, representing the entire solar system on a mobile screen posed a challenge. If only a few parts of the system were visible at a time, it would diminish the overall user experience. Additionally, creating a visually appealing and enjoyable interface presented another difficulty. In the proposal stage, only three out of the four members supported this idea.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/emoji.jpeg">
+                                    <div class="car_desc">
+                                        The multi-touch unlock system employs an emoji pattern, allowing users to select and input a specific sequence of emojis to access their phone. The user sets their own unique pattern. Initially, this design received a score of 0 out of 4 in the design proposal phase due to its perceived simplicity.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/music.jpeg">
+                                    <div class="car_desc">
+                                        This multi-touch unlocking system enables users to input the correct combination, and once it's successfully entered, the phone unlocks. Originally, these concepts, as depicted in the diagrams, were envisioned to be executed using a keyboard, guitar, or drums. The majority of members were highly enthusiastic about this concept, as it not only presented a unique approach but also offered numerous opportunities for enhancements and additional features to make the lock more enticing.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/puzzle.jpeg">
+                                    <div class="car_desc">
+                                        The multi-touch unlocking system utilized puzzle pieces, requiring them to be arranged in a specific sequence for the phone to unlock. This sequence could involve solving a jigsaw puzzle or organizing numbers in the correct order by sliding them one at a time. Unfortunately, only one out of four team members endorsed this concept. One of the drawbacks of this unlocking method was its resemblance to the familiar 'slide to unlock' approach.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/zodiac.jpeg">
+                                    <div class="car_desc">
+                                        This multi-touch unlocking system draws inspiration from constellations. Users have the option to select their preferred constellation pattern to unlock the phone. To gain access, they arrange the stars of the chosen constellation. Three out of four team members endorsed this design for further development, finding it an intriguing addition. However, it was noted that one drawback was its similarity to the Android unlock method. Additionally, accommodating the extensive variety of constellations could pose a challenge.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/3door.jpeg">
+                                    <div class="car_desc">
+                                        The multi-touch unlocking method, utilizing the three-door unlock approach, mirrors the Monte Carlo principle where users select a door at random to locate the goat. However, in the event they fail to identify the correct door, the game resets. While this concept holds potential, the practical execution may not yield optimal results. Moreover, relying on guesswork to find the correct door undermines the primary objective of enabling users to access their phones conveniently using their chosen unlocking method.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/touch-ideas/potion.jpeg">
+                                    <div class="car_desc">
+                                        This method involves brewing a potion to unlock the phone, using a multi-touch approach. Users are given a set of basic potions and must brew the one they select as their unlocking elixir. While this concept has potential, it falls short in terms of uniqueness and simplicity. Additionally, implementing it would necessitate a significant emphasis on UI design to make up for the lack of distinctive features. 
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                </section>
+                
+                <!-- carousel for sensory ideation-->
+                <h3 class="colour">Sensory Based Unlock Ideation</h3>
+                <section id="sense-ideas" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="proj2/sensory-ideas/shake.jpeg">
+                                    <div class="car_desc">
+                                        The sensory unlocking system operates by requiring specific motions with the phone to enable unlocking when the moving object reaches a designated endpoint. The majority of our group members supported this model for sensory unlocking, as it offers an innovative approach and ample room for generating creative ideas, such as golf-based or ladder-based unlocking, as envisaged in future implementations.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/sensory-ideas/sing.jpeg">
+                                    <div class="car_desc">
+                                        This sensory-based unlocking method requires users to hum or sing a specific tune to gain access to their devices. The tune is then recorded by the sensory device and analyzed for a match with the tune already registered in the system. This concept garnered a 75% approval rate from a sample of four individuals. However, one potential drawback to implementing this method is its perceived complexity.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/sensory-ideas/sprint.jpeg">
+                                    <div class="car_desc">
+                                        In this sensory-based unlocking method, users are required to engage in physical activity, prompting the device's meter to measure their speed. When the device registers a specific speed threshold, it triggers the phone to unlock. While one out of four team members advocated for this approach, it was ultimately not selected, partly due to its limited suitability for testing purposes.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/sensory-ideas/temp.jpeg">
+                                    <div class="car_desc">
+                                        This method of sensory-based unlocking utilizes the hand's temperature to grant access to the phone. When the temperature gauge approaches the predetermined unlocking threshold, the device is activated. However, only one in four individuals supports this concept. One drawback raised is the potential difficulty in accessing a device to measure its temperature.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="proj2/sensory-ideas/bball.jpeg">
+                                    <div class="car_desc">
+                                        This method employs a sensory approach to unlocking the phone, wherein the user spins the device on their finger, akin to spinning a basketball. While this concept garnered a 75% approval rate, it's worth noting that despite its popularity, it may not be the most practical solution. Not every user possesses the dexterity to execute such a maneuver, potentially leading to accidents.
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                </section>
+
+            </div>
             <h2 class='title proj colour'>Clicker Game ↓</h2>
-                <div class="proj-desc">
-                    this is our clicker game bla bla bla
-                </div>
+            <div class="proj-desc">
+                <p>The development process for the engaging clicker button game involved evaluating and selecting the top 10 ideas out of 40. 
+                        The "Monkey Poop War" concept, though unique, was considered too complex. The "Clicker Game" stood out for its simplicity and creative potential. 
+                        Other ideas included bird-viewing, color combinations, and expression-changing applications.
+                        <br><br>
+                        The top contenders were "Monkey Poop War," "Clicker Game," "Bird Sounds," "Color Changing Game," and "Expression Changing." 
+                        Sketches for the color mixing game showed creativity but faced limitations. 
+                        The monkey poop game offered complexity but was ultimately set aside due to logistical challenges. 
+                        The bird-viewing application needed further depth.
+                        <br><br>
+                        The process highlighted the need for an idea balancing uniqueness and feasibility. 
+                        The clicker game emerged as a promising choice, with Thet's implementation adding innovative elements like a metronome and various game modes to improve hand-eye coordination and reflexes.
+                        <br><br>
+                        The resulting clicker game is designed to enhance hand-eye coordination and reflex responses in a fun and interactive manner. It offers diverse modes including 'Normal Mode' for classic clicking, 
+                        'Color Mode' for visual stimulation, and 'Animal Mode' for both entertainment and education. With these options, players can tailor their experience, ensuring hours of entertainment and skill-building.
+                </p>
+                <h3 class="colour">Concept Sketches</h3>
+                <p>We created a tier list of our top 40 ideas so that it is easy to rate them, our tier list ranged from (S) to (D), where (S) represents the top of the tier list and (D) represents the bottom-most tier. 
+                    This made the sorting easier, making us consider only the top 10 ideas. Following are those top 10 ideas.
+                </p>
+                <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="photos/img/10ideas/monkey-poop-war.jpg" alt="monkey poop war">
+                                    <div class="car_desc">Monkey poop war was a part of our top 1 ideas, this is a game where there are two monkeys facing each other and they throw poop at each, 
+                                    which consequently has to be dodged by the opposite monkey. It was made by Logan, we chose this as the best idea because not only is it unique but also it is fun and educational. 
+                                    It is good for the development of hand-eye coordination. This idea was eventually not chosen to go further because it seemed a bit too complicated and maybe not as unique.
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="photos/img/10ideas/clicker-game.jpg" alt="clicker game">
+                                    <div class="car_desc">The second idea, or the first on (A) tier is a clicker game. This idea was made by Htet, some of the great features of this application are that it is quite unique and it teaches kids to work fast. 
+                                        This application was also one of our priorities because it has a lot of room for more creativity since it is a very simple and basic application. The downside of this application for this project could be that it is not as interesting as some of our other ideas.  
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="photos/img/10ideas/bird-sounds.jpg" alt="bird sounds">
+                                    <div class="car_desc">This idea also belongs to the (A) tier, this idea belonged to Heer. In this application, the user can view birds of different species from all around the world and see what they sound like. 
+                                        They can also view fun facts and important information about the birds. Some of the pros of this application were that it was something new, and a lot more educational than some of our other ideas. But the idea itself was a bit limiting and there was not much room for creativity.
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                  </section>
+            </div>
             <h2 class='title proj colour'>Databases Course Term Project ↓</h2>
                 <div class='proj-desc'>
                     <p>Full stack development of a 3-tier architecure web application.<br>
