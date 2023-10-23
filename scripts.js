@@ -58,8 +58,8 @@ changeCharColour();
 
 Splide.defaults = {
   padding: '5%',
-  width: '70%',
-  height: '70%',
+  width: '80%',
+  height: '80%',
   rewind: 'true',
 }
 
