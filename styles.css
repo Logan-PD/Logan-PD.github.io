@@ -1,6 +1,6 @@
 body {
     background-color: rgb(32, 32, 32);
-    color:rgb(204, 204, 204);
+    color:rgb(233, 233, 233);
 
     width:80%;
     margin-left:auto;
@@ -56,9 +56,6 @@ a {color: #085575;}
     margin-right:5%;
 }
 
-.colour {
-    cursor: pointer;
-}
 
 #contact-img {
     padding-top:5%;
@@ -99,7 +96,7 @@ h1 {
 #summary {
     padding-top: 2%;
     color: #ffe066;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 
@@ -134,11 +131,22 @@ h2 {
     line-height: 1.5em;
 }
 
+
+.splide {
+    width: 90%;
+    margin: 10% auto;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
 .car_desc{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    line-height: 1.15em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .splide__slide img {

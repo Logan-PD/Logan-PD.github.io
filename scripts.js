@@ -57,12 +57,17 @@ $( function() {
 changeCharColour();
 
 Splide.defaults = {
-  type   : 'loop'
+  padding: '5%',
+  width: '70%',
+  height: '70%',
+  rewind: 'true',
 }
 
 document.addEventListener( 'DOMContentLoaded', function () {
   new Splide( '#image-carousel', {} ).mount();
   new Splide( '#touch-ideas', {} ).mount();
   new Splide( '#sense-ideas', {} ).mount();
+  new Splide( '#touch-refine', {} ).mount();
+  new Splide( '#sense-refine', {} ).mount();
 } );
 
