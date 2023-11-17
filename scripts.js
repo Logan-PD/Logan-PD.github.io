@@ -64,7 +64,9 @@ Splide.defaults = {
 }
 
 document.addEventListener( 'DOMContentLoaded', function () {
-  new Splide( '#image-carousel', {} ).mount();
+  new Splide( '#p1-concept', {} ).mount();
+  new Splide( '#p1-detail', {} ).mount();
+  new Splide( '#p1-final', {} ).mount();
   new Splide( '#touch-ideas', {} ).mount();
   new Splide( '#sense-ideas', {} ).mount();
   new Splide( '#touch-refine', {} ).mount();
