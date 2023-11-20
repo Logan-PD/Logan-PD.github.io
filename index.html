@@ -33,20 +33,216 @@
         
         <div class="scrl-sect">
             <div id="accordion">
+
+            <h2 class="title proj colour">Arduino Posture Corrector ↓</h2>
+            <div class="proj-desc">
+                <p>For this project, we were prompted to “solve an everyday problem” using the basic Arduino kit hardware. After numerous ideas and sketches, our group decided on the posture corrector. The problem our device solves is bad posture over time when working at a desk. 
+                    By mounting an ultrasonic sensor to the headrest of a chair, the Arduino software will constantly scan for a distance threshold. When the user has a bad posture, their head and back will be slouched forward, exceeding the 
+                    distance threshold and triggering the buzzer and alarm, causing the user to maintain good posture. Our final prototype used cardboard to cover the wire and circuitry and make the device look like a usable appliance. 
+                </p>
+
+                <p>Below is our concept video showcaseing the final prototype.</p>
+                <iframe width="840" height="430" src="https://www.youtube.com/embed/u_hYRy5qotM?si=RvJvFGfdP83EsCpv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <h3 class="colour">Sketching and Ideation Phase</h3>
+                <p>Before deciding on our idea of the posture corrector, collectively and individually we went through the concept sketches and detailed sketches phases of design</p>
+                
+
+                <!-- carousel for concept sketches-->
+                <div id="posture-concept" class="splide" aria-label="Beautiful Images">
+                    <h3 class="colour">Concept Sketches</h3>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="proj3/concept/auto_fan.jpg">
+                                <div class="car_desc">
+                                    The automatic fan was created by Logan as a way to automatically trigger a fan based on a temperature and humidity sensor. When a certain threshold temperature was reached, the fan would trigger. This idea would be used on an office desk, or with bigger hardware in a room. We decided not to pursue this idea due to its simplicity.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/closet_organizer.jpg">
+                                <div class="car_desc">
+                                    The closet organiser is an idea by Logan that helps to keep a cluttered closet organised. By replacing the hanging rack with a rotating rack powered by a motor, the user would hold a button to rotate their clothes until the one they want is found. While this idea was interesting, due to hardware constraints, we decided not to pursue it.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/pet_feeder.jpg">
+                                <div class="car_desc">
+                                    The pet feeder is an idea created by Logan that solves the problem of forgetting to feed your pet. Using an internal timer in the arduino software, at a set interval, for example 6am and 6pm, a motor would activate and let the food bowl be filled from a reservoir. In the end we decided not to pursue this idea due to similar products already existing.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/pet_toy.jpg">
+                                <div class="car_desc">
+                                    The pet toy was drawn by Logan and serves as a way for cats, dogs and other small pets to entertain themselves. The basic idea is that the toy will be able to move itself away from the pet using an ultrasonic sensor and motors. Furthermore, the toy would have some sort of decoration on it that pets would want to play with. We decided not to further explore this idea because similar products already exist.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/plant.jpg">
+                                <div class="car_desc">
+                                    A system using Arduino, humidity, and temperature sensors to water plants automatically when the soil is dry, preventing forgetfulness.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/garbage.jpg">
+                                <div class="car_desc">
+                                    A hands-free garbage can with an ultrasonic sensor and servo motor to automatically open the lid when someone approaches, promoting hygiene.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/postureCorrector.png">
+                                <div class="car_desc">
+                                    A chair-mounted sensor connected to an Arduino that alerts the user to correct their posture when slouching. This is the initial design of the final prototype we decided to implement.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/art.jpg">
+                                <div class="car_desc">
+                                    An art installation that responds to people's presence using ultrasonic sensors, servo motors, and LED lights, creating an engaging and dynamic visual experience.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/nightLight.png">
+                                <div class="car_desc">
+                                    A device using a photoresistor and Arduino to automatically turn on LEDs in the dark.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/robotArm.png">
+                                <div class="car_desc">
+                                    A Lego-built robotic arm controlled by an Arduino and servo motors for basic tasks.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/showerMonitor.png">
+                                <div class="car_desc">
+                                    An Arduino-based system that tracks water usage in showers and alerts when it's excessive.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/smartPantry.png">
+                                <div class="car_desc">
+                                    A setup using ultrasonic sensors and an Arduino to monitor and signal when pantry items are low.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/concept/sunrise.jpg">
+                                <div class="car_desc">
+                                    An alarm clock that mimics a gentle sunrise by gradually increasing the brightness and color temperature of LED lights, providing a more pleasant wake-up experience.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p>From these concept sketches, we chose the most promising and drew further detailed sketches.</p>
+
+                <!-- carousel for detailed sketches-->
+                <div id="posture-detailed" class="splide" aria-label="Beautiful Images">
+                    <h3 class="colour">Detailed Sketches</h3>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/detailed_alarm.jpg">
+                                <div class="car_desc">
+                                    The sunrise simulator alarm clock solves the problem of unpleasant alarms and it helps you start the day with a positive mood. Set the alarm to the time of your liking or set it to match the sunrise outside, which is detected by the photoresistor. The alarm wakes you up by simulating natural sunlight with the LED strip and producing natural sounds (like birds chirping, wind chimes) to wake you up.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/detailed_fan.jpg">
+                                <div class="car_desc">
+                                    This automatic fan and cooling system is meant to help get through those hot summer days. The fan begins to spin when the temperature sensor has detected that the temperature is too high. The user can also press the button to spray themselves with a refreshing splash of water.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/detailed_garbage.jpg">
+                                <div class="car_desc">
+                                    This smart garbage can aims to improve hygiene when using a garbage can by removing any physical touch necessary. First, walk up to the garbage machine to be detected by the first ultrasonic sensor and, wave ur hand above the can to trigger the second ultrasonic sensor. Then, the servo motor opens the lid for you.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/postureCorrector.png">
+                                <div class="car_desc">
+                                    An ultrasonic sensor on a chair's back measures the distance to the user's back. The Arduino triggers a buzzer or motor when it detects slouching, promoting good posture. Users can set their preferred distance thresholds for posture alerts.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/detailed_posture.jpg">
+                                <div class="car_desc">
+                                    This version of the posture corrector works in the same way as the ones above but provides feedback differently. The chair box in the back that contains a buzzer and a vibration motor, as well as the arduino. When the user has a bad posture, the buzzer makes a sound and the vibration motor vibrates the entire chairs.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/posture-kai.jpg">
+                                <div class="car_desc">
+                                    This version of the posture corrector was drawn by Kai. The key difference here is that the feedback is situated on top of the users computer monitor to emit visual and auditory feedback.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/posture.jpg">
+                                <div class="car_desc">
+                                    This version of the posture corrector was sketched by Logan. These two versions show the same basic idea of creating an output when bad posture is detected. In the first version, a buzzer is activated on the seat and in the second version, a fan is activated on the user's desk. We decided to implement this idea using a vibration on the seat and an audio output.
+                                </div>
+
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/nightLight.png">
+                                <div class="car_desc">
+                                    The photoresistor detects ambient light levels, varying its resistance accordingly. The Arduino reads the photoresistor's resistance, turning on LEDs when it detects darkness. This setup automates lighting, ideal for use in places like bedrooms and hallways.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/robotArm.png">
+                                <div class="car_desc">
+                                    Arduino controls servo motors, each assigned to a part of the arm for movement. The arm, built with Lego blocks, is lightweight and customizable. It can perform tasks like picking up objects, suitable for educational or hobbyist purposes.
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="proj3/detailed/showerMonitor.png">
+                                <div class="car_desc">
+                                    A water flow sensor (or ultrasonic sensor) measures water use during showers. The Arduino processes this data, 
+                                    displaying it and alerting users when usage is high. This system helps in conserving water and monitoring usage in real-time.
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="colour">Concept Video</h3>
+                <p>Before attempting to implement a useable prototype, our team created a concept video to further understand the useability of the product.</p>
+                <iframe width="840" height="430" src="https://www.youtube.com/embed/xlNClM4f9wk?si=R2aYBjrfrgTTdq-C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                <h3 class="colour">Implementation</h3>
+                <p>With an understanding of what our project will look like, we began our implementation by using an arduino circuit simulation. Below is a picture of the circuit we created and the actual implementation using the Arduino kit.</p>
+                
+                <img src="/proj3/circuit.png" width="400">
+                <video width="500px" controls="controls">
+                    <source src="/proj3/circuit.mp4" type="video/mp4" />
+                </video>
+
+                <p>With our hardware and software in place, we completed the prototype and hid the wires using cardboard to make it integrate seamlessly with a chair. The final prototype is shown at the top of this write-up.</p>
+                <p>The source code for the arduino can be found <a href="https://github.com/kaihochak/posture-corrector/tree/main">here</a>.</p>
+
+
+            </div>
+
             <h2 class="title proj colour">Phone Unlocks ↓</h2>
             <div class="proj-desc">
                 <p>In this project we were challenged with coming up with a new way and creative way to unlock a mobile phone.
                     Our team came up with a touch based solution, the guitar unlock, and a sensory based solution, the falling bird unlock.
                 </p>
                 <h3 class="colour">Multi-touch Guitar unlock</h3>
-                <p>For our innovative multi-touch unlocking system, we embarked on a journey of ideation, exploring a multitude of intriguing concepts. Among these, "Cosmic Alignment" emerged, envisioning users interacting with celestial entities akin to planets for phone access. Another concept, "Composition Unlock," entailed crafting a unique musical composition that, when performed correctly, would grant device entry. Lastly, the "Zodiac Unlock" required users to input a constellation sign corresponding to their chosen symbol for unlocking.
+                <p>For our innovative multi-touch unlocking system, we embarked on a journey of ideation, exploring a multitude of intriguing concepts. Among these, "Cosmic Alignment" emerged, envisioning users interacting with celestial entities akin to planets for phone access. Another concept, "Composition Unlock," 
+                    entailed crafting a unique musical composition that, when performed correctly, would grant device entry. Lastly, the "Zodiac Unlock" required users to input a constellation sign corresponding to their chosen symbol for unlocking.
                     <br><br>
                     After extensive deliberation and the creation of initial sketches for each idea, it became apparent that the Composition Unlock not only stood as a unique approach but also promised an engaging user experience. As we transitioned from concept to implementation, our focus shifted towards refining the user interface, departing from the conventional guitar-like design to elevate the overall interaction.
                     <br><br>
                     Upon a sagacious suggestion from our professor, we integrated a musical element, enriching user interaction with harmonious notes upon key activation. While Heer led the charge in design and conceptualization, Kai took the helm in crafting the user interface and ensuring seamless functionality on both the front-end and back-end using HTML, CSS, and Javascript. Simultaneously, Logan integrated the musical effects into the website, guaranteeing flawless operation of the entire system.
                 </p>
-                <iframe width="840" height="430" src="https://www.youtube.com/embed/LpYDttd-xow?si=b6sRBgKhr3oE68BJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <h3 class="colour">Sensory-based bird fall</h3>
-                <p>Logan pioneered the sensory-based unlocking method, introducing innovative concepts such as the shake pattern, where users move the phone in a specific pattern to interact with the screen and unlock the device. Another inventive idea involved using vocal cues, where users could hum a tune, and the device would unlock once the correct melody was sung. As the implementation evolved, remarkable concepts emerged, including the angle unlock, which required physically manipulating the phone to reach a specific angle for unlocking. Another concept was the ladder, where a ball navigated between rungs, ultimately landing on the correct one to unlock the device. Ted endorsed this implementation, recognizing its potential.
+                <iframe width="840" height="430" src="https://www.youtube.com/embed/LpYDttd-xow?si=b6sRBgKhr3oE68BJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+                <h3 class="colour">Sensory-based bird fall</h3>
+                <p>Logan pioneered the sensory-based unlocking method, introducing innovative concepts such as the shake pattern, where users move the phone in a specific pattern to interact with the screen and unlock the device. Another inventive idea involved using vocal cues, 
+                    where users could hum a tune, and the device would unlock once the correct melody was sung. As the implementation evolved, remarkable concepts emerged, including the angle unlock, which required physically manipulating the phone to reach a specific angle for unlocking. Another concept was the ladder, where a ball navigated between rungs, ultimately landing on the correct one to unlock the device. Ted endorsed this implementation, recognizing its potential.
                     <br><br>
                     Throughout the iterations, notable improvements were made, notably refining the locking mechanism to incorporate a tile-based approach rather than simply reaching the end, enhancing overall security. Additionally, meticulous attention was paid to the user interface. Ted authored the Unity script for the unlock screen, augmenting it with various illustrations to enhance the website's visual appeal.
                 </p>
@@ -449,7 +645,7 @@
                 </p>
             </div>
 
-            
+            <!-- Databases Project -->
             <h2 class='title proj colour'>Databases Course Term Project ↓</h2>
             <div class='proj-desc'>
                 <p>Full stack development of a 3-tier architecure web application.<br>
@@ -500,7 +696,7 @@
                 
             </div>
 
-        </div> <!-- end of coding projects-->
+        </div>
     </div>
 
         

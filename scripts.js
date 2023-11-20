@@ -64,6 +64,8 @@ Splide.defaults = {
 }
 
 document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#posture-detailed', {} ).mount();
+  new Splide( '#posture-concept', {} ).mount();
   new Splide( '#p1-concept', {} ).mount();
   new Splide( '#p1-detail', {} ).mount();
   new Splide( '#p1-final', {} ).mount();
